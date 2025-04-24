@@ -2,12 +2,22 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>作問集</title>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+  <title>まとめて表示</title>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <h1>作問集</h1>
-  <p>以下に問題を掲載します。</p>
-  <p>問題1: $test$</p>
+  <h1>問題一覧</h1>
+  
+  <div id="q1">
+    <?php include('q1.html'); ?>
+  </div>
+
+  <div id="q2">
+    <?php include('q2.html'); ?>
+  </div>
+
+  <div id="q3">
+    <?php include('q3.html'); ?>
+  </div>
 </body>
 </html>
