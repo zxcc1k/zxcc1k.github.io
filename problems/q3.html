@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>第3問</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\', '\']],
+        displayMath: [['$$', '$$'], ['\', '\']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    /* ページ全体 */
+    body {
+      background-color: #eaf7ff;
+      color: #003a63;
+      font-family: "ヒラギノ角ゴ Pro","Meiryo","sans-serif";
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    /* ヘッダー */
+    header {
+      background-color: #00aaff;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    /* メインコンテンツ */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    /* 問題リスト */
+    ol {
+      counter-reset: item;
+      list-style: none;
+      padding-left: 0;
+    }
+    ol li {
+      counter-increment: item;
+      margin: 1.5rem 0;
+      background: #ffffff;
+      padding: 1rem;
+      border-left: 6px solid #00aaff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    ol li::before {
+      content: "問" counter(item) ". ";
+      font-weight: bold;
+      color: #00aaff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>第3問</h1>
+  </header>  <main>
+    <p>$n$ を正の整数とする．方程式 $e^{nx} + x - 2 = 0 \cdots (\ast)$ について，以下の問いに答えよ．</p>
+    <ol>
+      <li>
+        <p>$(\ast)$ がただ一つの実数解を持つことを示せ．また，それを $\alpha_n$ とするとき，$\alpha_n > 0$ を示せ．</p>
+      </li>
+      <li>
+        <p>$\displaystyle \lim_{n \to \infty} \alpha_n = 0$ を示せ．</p>
+      </li>
+      <li>
+        <p>$\displaystyle \lim_{n \to \infty} (1 + \alpha_n)^n$ を求めよ．</p>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>
