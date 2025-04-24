@@ -6,27 +6,78 @@
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
+  <style>
+    body {
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+    }
+
+    ol {
+      counter-reset: question;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 1.5em 0;
+      background: #fff;
+      padding: 1em;
+      border-left: 5px solid #3498db;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    li::before {
+      counter-increment: question;
+      content: "問" counter(question) ". ";
+      font-weight: bold;
+      color: #3498db;
+      margin-right: 0.5em;
+    }
+
+    span[style] {
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 <body>
   <h1>第1問</h1>
   <p>以下の問いに答えよ．</p>
   <ol>
     <li>
-      <p><span style="font-size: 1.2em;">$x \geq 0$のとき，</span><br>
-      <span style="font-size: 1.2em;">$\displaystyle x - \frac{x^3}{6} \leq \sin x \leq x$が成り立つことを示せ．</span></p>
+      <p>$x \geq 0$のとき，<br>
+      $\displaystyle x - \frac{x^3}{6} \leq \sin x \leq x$が成り立つことを示せ．</p>
     </li>
     <li>
-      <p><span style="font-size: 1.2em;">$0 \leq x \leq \log 2$のとき，</span><br>
-      <span style="font-size: 1.2em;">$1 + x \leq e^x \leq 1 + x + x^2$が成り立つことを示せ．</span></p>
+      <p>$0 \leq x \leq \log 2$のとき，<br>
+      $1 + x \leq e^x \leq 1 + x + x^2$が成り立つことを示せ．</p>
     </li>
     <li>
-      <p><span style="font-size: 1.2em;">不定積分$\int \log x\,dx$を求めよ．</span></p>
+      <p>不定積分$\int \log x\,dx$を求めよ．</p>
     </li>
     <li>
-      <p><span style="font-size: 1.2em;">極限</span><br>
-      <span style="font-size: 1.2em;">$\displaystyle \lim_{n \to \infty} \int_{1}^{2} n \sin\left(\sin\left(x^{\frac{1}{n}} - 1\right)\right) \, dx$</span><br>
-      <span style="font-size: 1.2em;">を求めよ．</span></p>
+      <p>極限<br>
+      $\displaystyle \lim_{n \to \infty} \int_{1}^{2} n \sin\left(\sin\left(x^{\frac{1}{n}} - 1\right)\right) \, dx$<br>
+      を求めよ．</p>
     </li>
   </ol>
+
+  <script>
+    window.onload = function() {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    };
+  </script>
 </body>
 </html>
