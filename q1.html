@@ -4,44 +4,89 @@
   <meta charset="UTF-8">
   <title>第1問</title>
   <script>
-    MathJax = {
+    window.MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\', '\']],
         displayMath: [['$$', '$$'], ['\', '\']]
       },
-      svg: {
-        fontCache: 'global'
-      }
+      svg: { fontCache: 'global' }
     };
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+    /* ページ全体 */
+    body {
+      background-color: #eaf7ff;
+      color: #003a63;
+      font-family: "ヒラギノ角ゴ Pro","Meiryo","sans-serif";
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    /* ヘッダー */
+    header {
+      background-color: #00aaff;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    /* メインコンテンツ */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    /* 問題リスト */
+    ol {
+      counter-reset: item;
+      list-style: none;
+      padding-left: 0;
+    }
+    ol li {
+      counter-increment: item;
+      margin: 1.5rem 0;
+      background: #ffffff;
+      padding: 1rem;
+      border-left: 6px solid #00aaff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    ol li::before {
+      content: "問" counter(item) ". ";
+      font-weight: bold;
+      color: #00aaff;
+    }
+    </style>
 </head>
 <body>
-  <h1>第1問</h1>
-  <p>以下の問いに答えよ．</p>
-  <ol>
-    <li>
-      <p>$x \geq 0$のとき，<br>
-      $\displaystyle x - \frac{x^3}{6} \leq \sin x \leq x$が成り立つことを示せ．</p>
-    </li>
-    <li>
-      <p>$0 \leq x \leq \log 2$のとき，<br>
-      $1 + x \leq e^x \leq 1 + x + x^2$が成り立つことを示せ．</p>
-    </li>
-    <li>
-      <p>不定積分$\int \log x\,dx$を求めよ．</p>
-    </li>
-    <li>
-      <p>極限<br>
-      $\displaystyle \lim_{n \to \infty} \int_{1}^{2} n \sin\left(\sin\left(x^{\frac{1}{n}} - 1\right)\right) \, dx$<br>
-      を求めよ．</p>
-    </li>
-  </ol>
+  <header>
+    <h1>第1問</h1>
+  </header>
 
-  <script>
-    window.onload = function() {
-      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-    };
-  </script>
+  <main>
+    <p>以下の問いに答えよ．</p>
+    <ol>
+      <li>
+        <p>$x \geqq 0$のとき，<br>
+        $\displaystyle x - \frac{x^3}{6} \leqq \sin x \leqq x$が成り立つことを示せ．</p>
+      </li>
+      <li>
+        <p>$0 \leqq x \leqq \log 2$のとき，<br>
+        $1 + x \leqq e^x \leqq 1 + x + x^2$が成り立つことを示せ．</p>
+      </li>
+      <li>
+        <p>不定積分$\displaystyle\int \log x\,dx$を求めよ．</p>
+      </li>
+      <li>
+        <p>極限<br>
+        $\displaystyle \lim_{n\to\infty}\int_{1}^{2}n\sin\bigl(\sin(x^{\frac{1}{n}}-1)\bigr)\,dx$<br>
+        を求めよ．</p>
+      </li>
+    </ol>
+  </main>
 </body>
 </html>
