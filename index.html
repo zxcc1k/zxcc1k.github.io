@@ -2,22 +2,44 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>まとめて表示</title>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>問題一覧</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      color: #003a63;
+      font-family: "Meiryo", sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #007acc;
+    }
+    ul {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      background: #fff;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 5px solid #007acc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <h1>問題一覧</h1>
-  
-  <div id="q1">
-    <?php include('q1.html'); ?>
-  </div>
-
-  <div id="q2">
-    <?php include('q2.html'); ?>
-  </div>
-
-  <div id="q3">
-    <?php include('q3.html'); ?>
-  </div>
+  <ul>
+    <li><a href="problems/q1.html">第1問</a></li>
+    <li><a href="problems/q2.html">第2問</a></li>
+    <li><a href="problems/q3.html">第3問</a></li>
+  </ul>
 </body>
 </html>
