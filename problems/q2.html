@@ -1,69 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>第2問</title>
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\', '\']],
-        displayMath: [['$$', '$$'], ['\', '\']]
-      },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <style>
-    body {
-      background-color: #eaf7ff;
-      color: #003a63;
-      font-family: "ヒラギノ角ゴ Pro","Meiryo","sans-serif";
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #00aaff;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    ol {
-      counter-reset: item;
-      list-style: none;
-      padding-left: 0;
-    }
-    ol li {
-      counter-increment: item;
-      margin: 1.5rem 0;
-      background: #ffffff;
-      padding: 1rem;
-      border-left: 6px solid #00aaff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    ol li::before {
-      content: "問" counter(item) ". ";
-      font-weight: bold;
-      color: #00aaff;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>第2問</h1>
-  </header>
-
-  <main>
     <p>放物線 $C: y^2 = 4x$ の焦点を $F$ とする．点 $F$ を通り，傾きが $m\ (1 \leqq m \leqq \sqrt{3})$ の直線と $C$ の交点を $A, B$ とする（ただし，$A$ の $x$ 座標は $B$ の $x$ 座標より小さいとする）とき，以下の問いに答えよ．</p>
     <ol>
       <li><p>点 $F$ の座標を求めよ．</p></li>
@@ -71,6 +5,3 @@
       <li><p>$\tan\dfrac{\pi}{8}$ を求めよ．</p></li>
       <li><p>$\displaystyle \frac{FB}{FA}$ の取りうる値の範囲を求めよ．</p></li>
     </ol>
-  </main>
-</body>
-</html>
